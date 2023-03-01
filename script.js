@@ -18,7 +18,7 @@ const indicator3 = document.querySelector('.indicator-3');
 const indicator4 = document.querySelector('.indicator-4');
 
 
-copyBtn.addEventListener('click', (e) => {
+copyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(copyValue.textContent)
         .then( () => {
             output.classList.add('activeOutput');
@@ -33,6 +33,10 @@ checkboxes.forEach(item => {
 });
 
 rangeInput.addEventListener('mousemove', () => {
+    console.log(1)
+    rangeCount.textContent = rangeInput.value;
+});
+rangeInput.addEventListener('touchmove', () => {
     console.log(1)
     rangeCount.textContent = rangeInput.value;
 });

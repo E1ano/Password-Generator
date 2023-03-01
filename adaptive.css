@@ -7,5 +7,10 @@
     .container {
         padding: 0 20px;
     }
+
+    .checkbox__input {
+        height: 24px;
+        width: 24px;
+    }
     
 }
