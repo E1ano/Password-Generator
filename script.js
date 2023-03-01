@@ -38,7 +38,7 @@ rangeInput.addEventListener('mousemove', () => {
 });
 
 generateBtn.addEventListener('click', () => {
-    if(+rangeCount.textContent !== 0 && (checkbox1.classList.contains('activeInput') ||
+    if(+rangeCount.textContent >= 6 && (checkbox1.classList.contains('activeInput') ||
                                          checkbox2.classList.contains('activeInput') ||
                                          checkbox3.classList.contains('activeInput') ||
                                          checkbox4.classList.contains('activeInput')))
