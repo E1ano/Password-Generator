@@ -32,12 +32,11 @@ checkboxes.forEach(item => {
    });
 });
 
-rangeInput.addEventListener('mousemove', () => {
+function changeRangeCount() {
     rangeCount.textContent = rangeInput.value;
-});
-rangeInput.addEventListener('touchmove', () => {
-    rangeCount.textContent = rangeInput.value;
-});
+}
+rangeInput.addEventListener('mousemove', changeRangeCount);
+rangeInput.addEventListener('touchmove', changeRangeCount);
 
 generateBtn.addEventListener('click', () => {
     if(+rangeCount.textContent >= 6 && (checkbox1.classList.contains('activeInput') ||
