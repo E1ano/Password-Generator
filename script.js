@@ -33,11 +33,9 @@ checkboxes.forEach(item => {
 });
 
 rangeInput.addEventListener('mousemove', () => {
-    console.log(1)
     rangeCount.textContent = rangeInput.value;
 });
 rangeInput.addEventListener('touchmove', () => {
-    console.log(1)
     rangeCount.textContent = rangeInput.value;
 });
 
@@ -117,11 +115,3 @@ function generatePassword(length, useLowercase, useUppercase, useNumbers, useSym
 
     return password;
 }
-
-console.log(generatePassword(
-    +rangeCount.textContent,
-    document.getElementById('checkbox-1').classList.contains('activeInput'),
-    document.getElementById('checkbox-2').classList.contains('activeInput'),
-    document.getElementById('checkbox-3').classList.contains('activeInput'),
-    document.getElementById('checkbox-4').classList.contains('activeInput')
-),+rangeCount.textContent);
